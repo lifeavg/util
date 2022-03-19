@@ -1,2 +1,2 @@
 @ECHO OFF
-python %USERPROFILE%\.util\base64util.py %*
+python "%PROGRAMFILES%\util\base64util.py" %*
