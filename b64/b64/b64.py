@@ -46,8 +46,10 @@ def main() -> None:
     group.add_argument('-ef', dest='encode_file', metavar='F', type=pathlib.Path, nargs=2,
                        help='Encode file to base64 format. First - source, second - destination.')
     group.add_argument('-df', dest='decode_file', metavar='F', type=pathlib.Path, nargs=2,
-                       help='Decode file from base64 format. Don\'t add extension to destination file, program '
-                            'will try to added automatically. First - source, second - destination.')
+                       help='Decode file from base64 format. Don\'t '
+                            'add extension to destination file, program '
+                            'will try to added automatically. First - source, '
+                            'second - destination.')
 
     args = parser.parse_args()
 
