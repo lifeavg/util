@@ -9864,7 +9864,7 @@ def main() -> None:
     parser.add_argument('-zip-rand', '-zr', action='store_true',
                        help='Get random zip code')
 
-    args = parser.parse_args(['-zr'])
+    args = parser.parse_args()
 
     if args.province_rand:
         code, name = random_province()
