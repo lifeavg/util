@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fake_doc"
+version = "0.1.0"
+description = "Fake doc number generator."
+requires-python = ">=3.10"
+classifiers = [
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+
+[project.scripts]
+esdoc = "fake_doc.spain:main"
+dni = "fake_doc.spain:random_dni"
+
+[project.urls]
+Source = "'https://github.com/lifeavg/util/fake_doc"

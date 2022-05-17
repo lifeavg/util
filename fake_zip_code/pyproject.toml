@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fake_zip_code"
+version = "0.1.0"
+description = "Zip code generator."
+requires-python = ">=3.10"
+classifiers = [
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+
+[project.scripts]
+eszip = "fake_zip_code.spain:main"
+zip = "fake_zip_code.spain:random_zip_code"
+
+[project.urls]
+Source = "'https://github.com/lifeavg/util/fake_zip_code"

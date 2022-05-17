@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fake_doc"
+version = "0.1.0"
+description = "Base64encoder/decoder for files and strings."
+requires-python = ">=3.10"
+classifiers = [
+    "Operating System :: Windows",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "python-magic-bin",
+]
+
+[tool.setuptools]
+platforms = [
+    "Windows",
+]
+
+[project.scripts]
+b64 = "b64:main"
+
+[project.urls]
+Source = "https://github.com/lifeavg/util/b64"
